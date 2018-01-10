@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Strikingly Test">
+  <meta name="author" content="Dezheng Wang">
+
+  <title>Strikingly Interview Test</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container" style="text-align: center;">
+    <h1>Strikingly Interview Test</h1>
+    <br>
+
+    <div style="width:100%;">
+      <input type="file" id="files" style="display: block ; margin: 0 auto" onchange="readFile()" />
+    </div>
+
+    <br>
+
+    <button type="button" class="btn btn-primary btn-lg" id="startButton" onclick="startGame()">Start Game</button>
+    <button type="button" class="btn btn-primary btn-lg" id="giveButton" style="display:none" onclick="giveMeAWord()">Give A Word</button>
+  </div>
+
+  <br>
+
+  <div class="container" style="text-align: center;">
+    <form class="form-inline">
+      <div class="form-group" id="actionButton" style="display:none">
+        <button type="button" class="btn btn-primary" onclick="makeAGuess()">Guess</button> &emsp;
+        <button type="button" class="btn btn-primary" onclick=getResult()>Get result</button>
+        <button type="button" class="btn btn-primary" onclick=summitResult()>Submit result</button>
+    </form>
+  </div>
+
+  <br>
+  
+  <div class="container" style="text-align: center;">
+    <textarea id="result" rows="12" cols="80"/>
+  </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="Strikingly.js"></script>
+    <script src="readFile.js"></script>
+</body>
+
+</html>
